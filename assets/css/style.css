@@ -266,3 +266,75 @@ header {
         text-align: center;
     }
 }
+
+/* Services page */
+
+.services-page {
+    .main-cards {
+        height: 70vh;
+    }
+    .card {
+    position: relative;
+    width: 220px;
+    height: 320px;
+    background: #030252;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    }
+    .card::before,
+    .card::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em;
+    font-weight: bold;
+    background-color: #435ef7;
+    transition: all 0.5s;
+    }
+    .card::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+    }
+    .card::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100%  0 15px;
+    }
+    .card:hover::before,
+    .card:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+    }  
+    .card1:hover:after {
+    content: "Creation of responsive and visually appealing business websites with a focus on branding and SEO.";
+    }
+    .card2:hover:after {
+    content: "Designing and developing single-page websites optimized for lead generation, promotions, or campaigns.";
+    }
+    .card3:hover:after {
+    content: "Enhancing website visibility and ranking on search engines through optimization techniques.";
+    }
+    .card4:hover:after {
+    content: "Regular updates, bug fixes, performance improvements, and security enhancements for existing websites.";
+    }
+    .card5:hover:after {
+    content: "Designing user-friendly and visually appealing interfaces to enhance user experience.";
+    }
+    .card6:hover:after {
+    content: "Building server-side logic, creating APIs, and integrating third-party services for seamless functionality.";
+    }
+}
